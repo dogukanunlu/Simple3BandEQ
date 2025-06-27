@@ -1,40 +1,60 @@
 <img width="490" alt="Screenshot 2025-06-26 at 01 04 33" src="https://github.com/user-attachments/assets/a7a343b6-fb3a-43b2-b68b-f8a2b72258ad" />
 
-Building the Plugin
+# Simple3BandEQ VST3 Plugin
 
-Clone this repository
+A minimal three-band equalizer plugin built with **JUCE**.
 
-git clone https://github.com/dogukanunlu/Simple3BandEQ.git
-cd Simple3BandEQ
+## Prerequisites
 
-Open the Projucer project
+* **JUCE** (version 6 or later) installed on your system
+* **Projucer** (comes with JUCE) for project management
+* A C++ compiler and IDE:
 
-Launch Projucer and open simple3bandeq.jucer.
+  * **macOS:** Xcode
+  * **Windows:** Visual Studio 2019 or later
 
-In the Project Settings panel, ensure VST3 is enabled under Plugin Formats.
+## Building the Plugin
 
-Save and export
+1. **Clone this repository**
 
-Click Save Project and Open in IDE (choose Xcode or Visual Studio).
+   ```bash
+   git clone https://github.com/dogukanunlu/Simple3BandEQ.git
+   cd Simple3BandEQ
+   ```
 
-Build the VST3
+2. **Open the Projucer project**
 
-In your IDE, select the VST3 build configuration (e.g., Release target).
+   * Launch **Projucer** and open `simple3bandeq.jucer`
+   * In the **Project Settings** panel, ensure **VST3** is enabled under **Plugin Formats**
 
-Build the project. The compiled plugin will appear in the Builds folder:
+3. **Save and export**
 
-macOS: Builds/MacOSX/build/Release/Simple3BandEQ.vst3
+   * Click **Save Project and Open in IDE** (choose **Xcode** or **Visual Studio**)
 
-Windows: Builds/Windows/build/Release/Simple3BandEQ.vst3
+4. **Build the VST3**
 
-Install the plugin
+   * In your IDE, select the **Release** configuration with **VST3** enabled
+   * Build the project. The compiled plugin will be located in the `Builds` folder:
 
-Copy the .vst3 file to your system's VST3 directory:
+     * **macOS:**
 
-macOS: ~/Library/Audio/Plug-Ins/VST3/
+       ```
+       Builds/MacOSX/build/Release/Simple3BandEQ.vst3
+       ```
+     * **Windows:**
 
-Windows: C:\Program Files\Common Files\VST3\
+       ```
+       Builds/Windows/build/Release/Simple3BandEQ.vst3
+       ```
 
-Launch your DAW
+5. **Install the plugin**
 
-Scan for new plugins and load Simple3BandEQ in your track.
+   * Copy the `.vst3` file to your system's VST3 directory:
+
+     * **macOS:** `~/Library/Audio/Plug-Ins/VST3/`
+     * **Windows:** `C:\Program Files\Common Files\VST3\`
+
+6. **Launch your DAW**
+
+   * Scan for new plugins and load **Simple3BandEQ** on a track
+
